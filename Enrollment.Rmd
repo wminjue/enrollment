@@ -1,0 +1,19 @@
+---
+title: "Enrollment"
+author: "Minjue Wu"
+date: "9/17/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+library(tidyverse)
+library(knitr)
+```
+
+```{r}
+x <- read_xlsx("class_enrollment_summary_by_term_9.17.19.xlsx", skip = 3)
+x %>%
+kable
+```
+
